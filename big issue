@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Big Issue</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial Black', sans-serif;
+      background: #111;
+      color: #fff;
+    }
+    header {
+      padding: 40px 20px;
+      text-align: center;
+      background: #e00000;
+      color: #fff;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 60px;
+      letter-spacing: 2px;
+    }
+    nav {
+      text-align: center;
+      background: #000;
+      padding: 15px;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      font-size: 16px;
+      text-transform: uppercase;
+    }
+    .hero {
+      background: url('https://via.placeholder.com/1400x600?text=Big+Issue+Hero+Image') center/cover no-repeat;
+      height: 600px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .hero h2 {
+      font-size: 48px;
+      background: rgba(0,0,0,0.7);
+      padding: 20px;
+    }
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    section h3 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+    .tour, .videos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .tour div, .videos iframe {
+      background: #222;
+      padding: 20px;
+      max-width: 300px;
+      width: 100%;
+    }
+    footer {
+      background: #000;
+      padding: 30px;
+      text-align: center;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Big Issue</h1>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#tour">Tour</a>
+    <a href="#videos">Videos</a>
+    <a href="#newsletter">Sign Up</a>
+  </nav>
+
+  <div class="hero">
+    <h2>New Release Out Now</h2>
+  </div>
+
+  <section id="tour">
+    <h3>Live Shows</h3>
+    <div class="tour">
+      <div><strong>April 27</strong><br>New York, NY<br><em>The Bowery</em></div>
+      <div><strong>May 4</strong><br>London, UK<br><em>Brixton Academy</em></div>
+      <div><strong>May 20</strong><br>Berlin, DE<br><em>SO36</em></div>
+    </div>
+  </section>
+
+  <section id="videos">
+    <h3>Latest Video</h3>
+    <div class="videos">
+      <iframe width="300" height="200" src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+              title="YouTube video" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <section id="newsletter">
+    <h3>Sign Up for Updates</h3>
+    <form>
+      <input type="email" placeholder="Your email" required style="padding:10px; width: 250px;">
+      <button type="submit" style="padding: 10px 20px; background: red; color: white; border: none;">Subscribe</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Big Issue. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
